@@ -24,4 +24,4 @@ PRs accepted.
 
 ## License
 
-MIT © Eon.codes
+MIT © [Eon.codes](http://eon.codes) 
