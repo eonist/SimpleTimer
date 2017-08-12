@@ -1,6 +1,4 @@
-Simple:
-
-# Title
+# SimpleTimer:
 
 This is a simple timer class in swift that enables you to:
 - Local scoped timer
