@@ -11,7 +11,7 @@ This is a simple timer class in swift that enables you to:
 
 ## How to get it:
 
-- Carthage: `github "eonist/SimpleTimerLib" "master"`
+- Carthage: `github "eonist/SimpleTimer" "master"`
 - Manual: Copy paste: `SimplerTimer.swift`
 
 ## Example:
