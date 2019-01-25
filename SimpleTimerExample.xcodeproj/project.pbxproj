@@ -16,6 +16,8 @@
 		F110DF1C21D410CF00096BC0 /* SimpleTimerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF1521D410CF00096BC0 /* SimpleTimerLib.framework */; };
 		F110DF1D21D410CF00096BC0 /* SimpleTimerLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF1521D410CF00096BC0 /* SimpleTimerLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F110DF2321D4116600096BC0 /* SimpleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF2221D4116600096BC0 /* SimpleTimer.swift */; };
+		F16213DB21FB57BD005297DE /* SimpleTimer_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = F16213D921FB57BD005297DE /* SimpleTimer_mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F16213E021FB57DE005297DE /* SimpleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF2221D4116600096BC0 /* SimpleTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		F110DF1721D410CF00096BC0 /* SimpleTimerLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTimerLib.h; sourceTree = "<group>"; };
 		F110DF1821D410CF00096BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F110DF2221D4116600096BC0 /* SimpleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTimer.swift; sourceTree = "<group>"; };
+		F16213D721FB57BD005297DE /* SimpleTimer_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleTimer_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16213D921FB57BD005297DE /* SimpleTimer_mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTimer_mac.h; sourceTree = "<group>"; };
+		F16213DA21FB57BD005297DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +77,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F16213D421FB57BD005297DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F110DEF221D40FAD00096BC0 = {
 			isa = PBXGroup;
 			children = (
+				F16213DF21FB57D2005297DE /* src */,
 				F110DEFD21D40FAD00096BC0 /* SimpleTimerExample */,
 				F110DF1621D410CF00096BC0 /* SimpleTimerLib */,
+				F16213D821FB57BD005297DE /* SimpleTimer-mac */,
 				F110DEFC21D40FAD00096BC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +103,7 @@
 			children = (
 				F110DEFB21D40FAD00096BC0 /* SimpleTimerExample.app */,
 				F110DF1521D410CF00096BC0 /* SimpleTimerLib.framework */,
+				F16213D721FB57BD005297DE /* SimpleTimer_mac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,10 +125,26 @@
 			isa = PBXGroup;
 			children = (
 				F110DF1721D410CF00096BC0 /* SimpleTimerLib.h */,
-				F110DF2221D4116600096BC0 /* SimpleTimer.swift */,
 				F110DF1821D410CF00096BC0 /* Info.plist */,
 			);
 			path = SimpleTimerLib;
+			sourceTree = "<group>";
+		};
+		F16213D821FB57BD005297DE /* SimpleTimer-mac */ = {
+			isa = PBXGroup;
+			children = (
+				F16213D921FB57BD005297DE /* SimpleTimer_mac.h */,
+				F16213DA21FB57BD005297DE /* Info.plist */,
+			);
+			path = "SimpleTimer-mac";
+			sourceTree = "<group>";
+		};
+		F16213DF21FB57D2005297DE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F110DF2221D4116600096BC0 /* SimpleTimer.swift */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +155,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F110DF1921D410CF00096BC0 /* SimpleTimerLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16213D221FB57BD005297DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16213DB21FB57BD005297DE /* SimpleTimer_mac.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +206,24 @@
 			productReference = F110DF1521D410CF00096BC0 /* SimpleTimerLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F16213D621FB57BD005297DE /* SimpleTimer-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F16213DE21FB57BD005297DE /* Build configuration list for PBXNativeTarget "SimpleTimer-mac" */;
+			buildPhases = (
+				F16213D221FB57BD005297DE /* Headers */,
+				F16213D321FB57BD005297DE /* Sources */,
+				F16213D421FB57BD005297DE /* Frameworks */,
+				F16213D521FB57BD005297DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleTimer-mac";
+			productName = "SimpleTimer-mac";
+			productReference = F16213D721FB57BD005297DE /* SimpleTimer_mac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,6 +240,9 @@
 					F110DF1421D410CF00096BC0 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+					};
+					F16213D621FB57BD005297DE = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -201,6 +261,7 @@
 			targets = (
 				F110DEFA21D40FAD00096BC0 /* SimpleTimerExample */,
 				F110DF1421D410CF00096BC0 /* SimpleTimerLib */,
+				F16213D621FB57BD005297DE /* SimpleTimer-mac */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +278,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F110DF1321D410CF00096BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16213D521FB57BD005297DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -240,6 +308,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F110DF2321D4116600096BC0 /* SimpleTimer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16213D321FB57BD005297DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16213E021FB57DE005297DE /* SimpleTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +558,66 @@
 			};
 			name = Release;
 		};
+		F16213DC21FB57BD005297DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "SimpleTimer-mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.futurelab.SimpleTimer-mac";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F16213DD21FB57BD005297DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "SimpleTimer-mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.futurelab.SimpleTimer-mac";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -508,6 +644,15 @@
 			buildConfigurations = (
 				F110DF1E21D410CF00096BC0 /* Debug */,
 				F110DF1F21D410CF00096BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F16213DE21FB57BD005297DE /* Build configuration list for PBXNativeTarget "SimpleTimer-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16213DC21FB57BD005297DE /* Debug */,
+				F16213DD21FB57BD005297DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
