@@ -1,7 +1,7 @@
 # SimpleTimer:
 
 ## What is it:
-This is a simple timer class in swift that enables you to:
+This is a simple timer class in swift that enables you to
 
 ## How does it work:
 - [x] Local scoped timer
