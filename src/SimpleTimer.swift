@@ -15,7 +15,7 @@ public class SimpleTimer {
       self.tick = onTick
    }
    public func start(){
-      timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(update), userInfo: nil, repeats: true)//swift 3 upgrade
+      timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(update), userInfo: nil, repeats: true) 
    }
    public func stop(){
       if let timer = timer {timer.invalidate()}

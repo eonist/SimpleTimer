@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1016F0522186C740062D42A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1016F0422186C740062D42A /* AppDelegate.swift */; };
+		F1016F0722186C760062D42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1016F0622186C760062D42A /* Assets.xcassets */; };
+		F1016F0A22186C760062D42A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1016F0822186C760062D42A /* MainMenu.xib */; };
+		F1016F1022186C860062D42A /* SimpleTimer_mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16213D721FB57BD005297DE /* SimpleTimer_mac.framework */; };
+		F1016F1122186C860062D42A /* SimpleTimer_mac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F16213D721FB57BD005297DE /* SimpleTimer_mac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F110DEFF21D40FAD00096BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DEFE21D40FAD00096BC0 /* AppDelegate.swift */; };
 		F110DF0121D40FAD00096BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF0021D40FAD00096BC0 /* ViewController.swift */; };
 		F110DF0421D40FAD00096BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F110DF0221D40FAD00096BC0 /* Main.storyboard */; };
@@ -21,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F1016F1222186C860062D42A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F110DEF321D40FAD00096BC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F16213D621FB57BD005297DE;
+			remoteInfo = "SimpleTimer-mac";
+		};
 		F110DF1A21D410CF00096BC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F110DEF321D40FAD00096BC0 /* Project object */;
@@ -31,6 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F1016F1422186C860062D42A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1016F1122186C860062D42A /* SimpleTimer_mac.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F110DF2121D410CF00096BC0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,6 +68,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F1016F0222186C740062D42A /* SimpleTimerExampleMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimerExampleMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1016F0422186C740062D42A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1016F0622186C760062D42A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1016F0922186C760062D42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F1016F0B22186C760062D42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1016F0C22186C760062D42A /* SimpleTimerExampleMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleTimerExampleMac.entitlements; sourceTree = "<group>"; };
 		F110DEFB21D40FAD00096BC0 /* SimpleTimerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F110DEFE21D40FAD00096BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F110DF0021D40FAD00096BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +91,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F1016EFF22186C740062D42A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1016F1022186C860062D42A /* SimpleTimer_mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F110DEF821D40FAD00096BC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,6 +124,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1016F0322186C740062D42A /* SimpleTimerExampleMac */ = {
+			isa = PBXGroup;
+			children = (
+				F1016F0422186C740062D42A /* AppDelegate.swift */,
+				F1016F0622186C760062D42A /* Assets.xcassets */,
+				F1016F0822186C760062D42A /* MainMenu.xib */,
+				F1016F0B22186C760062D42A /* Info.plist */,
+				F1016F0C22186C760062D42A /* SimpleTimerExampleMac.entitlements */,
+			);
+			path = SimpleTimerExampleMac;
+			sourceTree = "<group>";
+		};
 		F110DEF221D40FAD00096BC0 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +143,7 @@
 				F110DEFD21D40FAD00096BC0 /* SimpleTimerExample */,
 				F110DF1621D410CF00096BC0 /* SimpleTimerLib */,
 				F16213D821FB57BD005297DE /* SimpleTimer-mac */,
+				F1016F0322186C740062D42A /* SimpleTimerExampleMac */,
 				F110DEFC21D40FAD00096BC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,6 +154,7 @@
 				F110DEFB21D40FAD00096BC0 /* SimpleTimerExample.app */,
 				F110DF1521D410CF00096BC0 /* SimpleTimerLib.framework */,
 				F16213D721FB57BD005297DE /* SimpleTimer_mac.framework */,
+				F1016F0222186C740062D42A /* SimpleTimerExampleMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +220,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F1016F0122186C740062D42A /* SimpleTimerExampleMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1016F0F22186C760062D42A /* Build configuration list for PBXNativeTarget "SimpleTimerExampleMac" */;
+			buildPhases = (
+				F1016EFE22186C740062D42A /* Sources */,
+				F1016EFF22186C740062D42A /* Frameworks */,
+				F1016F0022186C740062D42A /* Resources */,
+				F1016F1422186C860062D42A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1016F1322186C860062D42A /* PBXTargetDependency */,
+			);
+			name = SimpleTimerExampleMac;
+			productName = SimpleTimerExampleMac;
+			productReference = F1016F0222186C740062D42A /* SimpleTimerExampleMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F110DEFA21D40FAD00096BC0 /* SimpleTimerExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F110DF0D21D40FB000096BC0 /* Build configuration list for PBXNativeTarget "SimpleTimerExample" */;
@@ -234,6 +304,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = FutureLab;
 				TargetAttributes = {
+					F1016F0122186C740062D42A = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					F110DEFA21D40FAD00096BC0 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -262,11 +335,21 @@
 				F110DEFA21D40FAD00096BC0 /* SimpleTimerExample */,
 				F110DF1421D410CF00096BC0 /* SimpleTimerLib */,
 				F16213D621FB57BD005297DE /* SimpleTimer-mac */,
+				F1016F0122186C740062D42A /* SimpleTimerExampleMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F1016F0022186C740062D42A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1016F0722186C760062D42A /* Assets.xcassets in Resources */,
+				F1016F0A22186C760062D42A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F110DEF921D40FAD00096BC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +377,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F1016EFE22186C740062D42A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1016F0522186C740062D42A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F110DEF721D40FAD00096BC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +413,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F1016F1322186C860062D42A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F16213D621FB57BD005297DE /* SimpleTimer-mac */;
+			targetProxy = F1016F1222186C860062D42A /* PBXContainerItemProxy */;
+		};
 		F110DF1B21D410CF00096BC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F110DF1421D410CF00096BC0 /* SimpleTimerLib */;
@@ -330,6 +426,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F1016F0822186C760062D42A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1016F0922186C760062D42A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		F110DF0221D40FAD00096BC0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -349,6 +453,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F1016F0D22186C760062D42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleTimerExampleMac/SimpleTimerExampleMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SimpleTimerExampleMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.SimpleTimerExampleMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		F1016F0E22186C760062D42A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleTimerExampleMac/SimpleTimerExampleMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SimpleTimerExampleMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.SimpleTimerExampleMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		F110DF0B21D40FB000096BC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -621,6 +769,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F1016F0F22186C760062D42A /* Build configuration list for PBXNativeTarget "SimpleTimerExampleMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1016F0D22186C760062D42A /* Debug */,
+				F1016F0E22186C760062D42A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F110DEF621D40FAD00096BC0 /* Build configuration list for PBXProject "SimpleTimerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
