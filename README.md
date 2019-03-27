@@ -28,14 +28,14 @@ SimpleTimer(interval: 3, repeats: true){print("tick")}.start()//Ticks every 3 se
 ```swift
 var idx:Int = 0
 /**
- * A Timer based on GCD
+ * A Timer based on GCD (More reliable as it doesn't freeze if main thread is frozen)
  * - Note: The can also be used: .seconds(Int), .microseconds(Int) and .nanoseconds(Int)
  */
 func timerGCD() -> () {
 	DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
 		Swift.print("tick: idx\(self.idx)")
 		self.idx += 1
-		self.timerGCD()
+		if self.idx < 10 {self.timerGCD()}//stop at 1sec
 	}
 }
 ```
