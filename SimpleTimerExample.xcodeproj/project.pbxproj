@@ -14,7 +14,6 @@
 		F1016F1122186C860062D42A /* SimpleTimer_mac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F16213D721FB57BD005297DE /* SimpleTimer_mac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F110DEFF21D40FAD00096BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DEFE21D40FAD00096BC0 /* AppDelegate.swift */; };
 		F110DF0121D40FAD00096BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF0021D40FAD00096BC0 /* ViewController.swift */; };
-		F110DF0421D40FAD00096BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F110DF0221D40FAD00096BC0 /* Main.storyboard */; };
 		F110DF0621D40FB000096BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F110DF0521D40FB000096BC0 /* Assets.xcassets */; };
 		F110DF0921D40FB000096BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F110DF0721D40FB000096BC0 /* LaunchScreen.storyboard */; };
 		F110DF1921D410CF00096BC0 /* SimpleTimerLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F110DF1721D410CF00096BC0 /* SimpleTimerLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -77,7 +76,6 @@
 		F110DEFB21D40FAD00096BC0 /* SimpleTimerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F110DEFE21D40FAD00096BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F110DF0021D40FAD00096BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F110DF0321D40FAD00096BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F110DF0521D40FB000096BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F110DF0821D40FB000096BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F110DF0A21D40FB000096BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 			children = (
 				F110DEFE21D40FAD00096BC0 /* AppDelegate.swift */,
 				F110DF0021D40FAD00096BC0 /* ViewController.swift */,
-				F110DF0221D40FAD00096BC0 /* Main.storyboard */,
 				F110DF0521D40FB000096BC0 /* Assets.xcassets */,
 				F110DF0721D40FB000096BC0 /* LaunchScreen.storyboard */,
 				F110DF0A21D40FB000096BC0 /* Info.plist */,
@@ -228,6 +225,7 @@
 				F1016EFF22186C740062D42A /* Frameworks */,
 				F1016F0022186C740062D42A /* Resources */,
 				F1016F1422186C860062D42A /* Embed Frameworks */,
+				F1CE266E2281E30800441836 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -247,6 +245,7 @@
 				F110DEF821D40FAD00096BC0 /* Frameworks */,
 				F110DEF921D40FAD00096BC0 /* Resources */,
 				F110DF2121D410CF00096BC0 /* Embed Frameworks */,
+				F1CE266C2281E2F000441836 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -266,6 +265,7 @@
 				F110DF1121D410CF00096BC0 /* Sources */,
 				F110DF1221D410CF00096BC0 /* Frameworks */,
 				F110DF1321D410CF00096BC0 /* Resources */,
+				F1CE266B2281E2D900441836 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -284,6 +284,7 @@
 				F16213D321FB57BD005297DE /* Sources */,
 				F16213D421FB57BD005297DE /* Frameworks */,
 				F16213D521FB57BD005297DE /* Resources */,
+				F1CE266D2281E2FD00441836 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -356,7 +357,6 @@
 			files = (
 				F110DF0921D40FB000096BC0 /* LaunchScreen.storyboard in Resources */,
 				F110DF0621D40FB000096BC0 /* Assets.xcassets in Resources */,
-				F110DF0421D40FAD00096BC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +375,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F1CE266B2281E2D900441836 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		F1CE266C2281E2F000441836 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		F1CE266D2281E2FD00441836 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		F1CE266E2281E30800441836 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F1016EFE22186C740062D42A /* Sources */ = {
@@ -432,14 +503,6 @@
 				F1016F0922186C760062D42A /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		F110DF0221D40FAD00096BC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F110DF0321D40FAD00096BC0 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		F110DF0721D40FB000096BC0 /* LaunchScreen.storyboard */ = {
@@ -548,7 +611,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -603,7 +666,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

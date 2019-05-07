@@ -6,11 +6,11 @@ import Foundation
  * SimpleTimer(interval:3, repeats:true){print("tick")}.start()//ticks every 3 seconds
  */
 public class SimpleTimer {
-   private var timer:Timer?
-   public var interval:TimeInterval /*in seconds*/
-   public var repeats:Bool
-   public var tick:Tick
-   public init(interval:TimeInterval, repeats:Bool = false, onTick:@escaping Tick){
+   private var timer: Timer?
+   public var interval: TimeInterval /*in seconds*/
+   public var repeats: Bool
+   public var tick: Tick
+   public init(interval: TimeInterval, repeats: Bool = false, onTick:@escaping Tick) {
       self.interval = interval
       self.repeats = repeats
       self.tick = onTick
@@ -19,23 +19,23 @@ public class SimpleTimer {
 /**
  * Core
  */
-extension SimpleTimer{
+extension SimpleTimer {
    /**
     * Starts the timer
     */
-   public func start(){
+   public func start() {
       timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(update), userInfo: nil, repeats: true)
    }
    /**
     * Stops the timer
     */
-   public func stop(){
+   public func stop() {
       timer?.invalidate()
    }
    /**
     * Resets the timer
     */
-   public func reset(){
+   public func reset() {
       stop()
       start()
    }
