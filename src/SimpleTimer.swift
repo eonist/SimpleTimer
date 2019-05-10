@@ -5,7 +5,7 @@ import Foundation
  * ## Examples:
  * SimpleTimer(interval:3, repeats:true){print("tick")}.start()//ticks every 3 seconds
  */
-public class SimpleTimer {
+open class SimpleTimer {
    private var timer: Timer?
    public var interval: TimeInterval /*in seconds*/
    public var repeats: Bool
@@ -23,26 +23,26 @@ extension SimpleTimer {
    /**
     * Starts the timer
     */
-   public func start() {
+   open func start() {
       timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(update), userInfo: nil, repeats: true)
    }
    /**
     * Stops the timer
     */
-   public func stop() {
+   open func stop() {
       timer?.invalidate()
    }
    /**
     * Resets the timer
     */
-   public func reset() {
+   open func reset() {
       stop()
       start()
    }
    /**
     * This method must be in the public or scope
     */
-   @objc internal func update() {
+   @objc open func update() {
       tick()
    }
 }
