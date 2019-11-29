@@ -1,5 +1,4 @@
 import Cocoa
-import SimpleTimer_mac
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {

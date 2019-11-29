@@ -1,5 +1,4 @@
 import UIKit
-import SimpleTimerLib
 
 class ViewController: UIViewController {
    override func viewDidLoad() {

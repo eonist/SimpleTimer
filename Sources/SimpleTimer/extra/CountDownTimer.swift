@@ -1,15 +1,16 @@
 import Foundation
 /**
- * EXAMPLE: CountDownTimer.init(duration:5,interval:0.1).onComplete{Swift.print("5 seconds up")}
+ * ## Examples:
+ * CountDownTimer.init(duration: 5,interval: 0.1).onComplete { Swift.print("5 seconds up") }
  */
-class CountDownTimer:SimpleTimer{
-    let duration:Double
-    var onComplete:()->Void// = {Swift.print("default onComplete")}
-    var curTime:Double = 0
-    init(duration:Double, interval:Double,onTick:@escaping Tick, onComplete:@escaping() -> Void) {
+class CountDownTimer: SimpleTimer {
+    let duration: Double
+    var onComplete: ()-> Void// = { Swift.print("default onComplete") }
+    var curTime: Double = 0
+    init(duration: Double, interval: Double, onTick:@escaping Tick, onComplete:@escaping() -> Void) {
         self.duration = duration
         self.onComplete = onComplete
-        super.init(interval: interval, repeats:true, onTick: onTick)
+        super.init(interval: interval, repeats: true, onTick: onTick)
     }
     /**
      * Called on every interval
@@ -32,7 +33,7 @@ class CountDownTimer:SimpleTimer{
     /**
      * Resumes at curTime
      */
-    func resume(){
+    func resume() {
         super.start()
     }
 }
