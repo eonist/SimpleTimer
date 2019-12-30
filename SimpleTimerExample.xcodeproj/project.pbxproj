@@ -14,6 +14,7 @@
 		F110DF0121D40FAD00096BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF0021D40FAD00096BC0 /* ViewController.swift */; };
 		F110DF0621D40FB000096BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F110DF0521D40FB000096BC0 /* Assets.xcassets */; };
 		F110DF0921D40FB000096BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F110DF0721D40FB000096BC0 /* LaunchScreen.storyboard */; };
+		F15C9F9823BA9B9300F9D524 /* SimpleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15C9F9723BA9B9300F9D524 /* SimpleTimerTests.swift */; };
 		F1903678239123910078B85D /* SimpleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903674239123910078B85D /* SimpleTimer.swift */; };
 		F1903679239123910078B85D /* SimpleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903674239123910078B85D /* SimpleTimer.swift */; };
 		F190367A239123910078B85D /* TimeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903676239123910078B85D /* TimeAnimator.swift */; };
@@ -21,6 +22,16 @@
 		F190367C239123910078B85D /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903677239123910078B85D /* CountDownTimer.swift */; };
 		F190367D239123910078B85D /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903677239123910078B85D /* CountDownTimer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F15C9F9A23BA9B9300F9D524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F110DEF321D40FAD00096BC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F110DEFA21D40FAD00096BC0;
+			remoteInfo = SimpleTimerExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F1016F1422186C860062D42A /* Embed Frameworks */ = {
@@ -52,12 +63,15 @@
 		F1016F0922186C760062D42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F1016F0B22186C760062D42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1016F0C22186C760062D42A /* SimpleTimerExampleMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleTimerExampleMac.entitlements; sourceTree = "<group>"; };
-		F110DEFB21D40FAD00096BC0 /* SimpleTimerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F110DEFB21D40FAD00096BC0 /* SimpleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F110DEFE21D40FAD00096BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F110DF0021D40FAD00096BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F110DF0521D40FB000096BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F110DF0821D40FB000096BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F110DF0A21D40FB000096BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15C9F9523BA9B9300F9D524 /* SimpleTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15C9F9723BA9B9300F9D524 /* SimpleTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerTests.swift; sourceTree = "<group>"; };
+		F15C9F9923BA9B9300F9D524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1903674239123910078B85D /* SimpleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTimer.swift; sourceTree = "<group>"; };
 		F1903676239123910078B85D /* TimeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAnimator.swift; sourceTree = "<group>"; };
 		F1903677239123910078B85D /* CountDownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
@@ -72,6 +86,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F110DEF821D40FAD00096BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15C9F9223BA9B9300F9D524 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -96,6 +117,7 @@
 		F110DEF221D40FAD00096BC0 = {
 			isa = PBXGroup;
 			children = (
+				F15C9F9F23BA9BDB00F9D524 /* Tests */,
 				F1903672239123910078B85D /* Sources */,
 				F110DEFD21D40FAD00096BC0 /* SimpleTimerExample */,
 				F1016F0322186C740062D42A /* SimpleTimerExampleMac */,
@@ -106,8 +128,9 @@
 		F110DEFC21D40FAD00096BC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F110DEFB21D40FAD00096BC0 /* SimpleTimerExample.app */,
+				F110DEFB21D40FAD00096BC0 /* SimpleTimer.app */,
 				F1016F0222186C740062D42A /* SimpleTimerExampleMac.app */,
+				F15C9F9523BA9B9300F9D524 /* SimpleTimerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +145,23 @@
 				F110DF0A21D40FB000096BC0 /* Info.plist */,
 			);
 			path = SimpleTimerExample;
+			sourceTree = "<group>";
+		};
+		F15C9F9623BA9B9300F9D524 /* SimpleTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F15C9F9723BA9B9300F9D524 /* SimpleTimerTests.swift */,
+				F15C9F9923BA9B9300F9D524 /* Info.plist */,
+			);
+			path = SimpleTimerTests;
+			sourceTree = "<group>";
+		};
+		F15C9F9F23BA9BDB00F9D524 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F15C9F9623BA9B9300F9D524 /* SimpleTimerTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		F1903672239123910078B85D /* Sources */ = {
@@ -172,9 +212,9 @@
 			productReference = F1016F0222186C740062D42A /* SimpleTimerExampleMac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F110DEFA21D40FAD00096BC0 /* SimpleTimerExample */ = {
+		F110DEFA21D40FAD00096BC0 /* SimpleTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F110DF0D21D40FB000096BC0 /* Build configuration list for PBXNativeTarget "SimpleTimerExample" */;
+			buildConfigurationList = F110DF0D21D40FB000096BC0 /* Build configuration list for PBXNativeTarget "SimpleTimer" */;
 			buildPhases = (
 				F110DEF721D40FAD00096BC0 /* Sources */,
 				F110DEF821D40FAD00096BC0 /* Frameworks */,
@@ -186,10 +226,28 @@
 			);
 			dependencies = (
 			);
-			name = SimpleTimerExample;
+			name = SimpleTimer;
 			productName = SimpleTimerExample;
-			productReference = F110DEFB21D40FAD00096BC0 /* SimpleTimerExample.app */;
+			productReference = F110DEFB21D40FAD00096BC0 /* SimpleTimer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F15C9F9423BA9B9300F9D524 /* SimpleTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15C9F9E23BA9B9300F9D524 /* Build configuration list for PBXNativeTarget "SimpleTimerTests" */;
+			buildPhases = (
+				F15C9F9123BA9B9300F9D524 /* Sources */,
+				F15C9F9223BA9B9300F9D524 /* Frameworks */,
+				F15C9F9323BA9B9300F9D524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F15C9F9B23BA9B9300F9D524 /* PBXTargetDependency */,
+			);
+			name = SimpleTimerTests;
+			productName = SimpleTimerTests;
+			productReference = F15C9F9523BA9B9300F9D524 /* SimpleTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,7 +255,7 @@
 		F110DEF321D40FAD00096BC0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = FutureLab;
 				TargetAttributes = {
@@ -207,6 +265,10 @@
 					F110DEFA21D40FAD00096BC0 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
+					};
+					F15C9F9423BA9B9300F9D524 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = F110DEFA21D40FAD00096BC0;
 					};
 				};
 			};
@@ -223,8 +285,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F110DEFA21D40FAD00096BC0 /* SimpleTimerExample */,
+				F110DEFA21D40FAD00096BC0 /* SimpleTimer */,
 				F1016F0122186C740062D42A /* SimpleTimerExampleMac */,
+				F15C9F9423BA9B9300F9D524 /* SimpleTimerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +308,13 @@
 			files = (
 				F110DF0921D40FB000096BC0 /* LaunchScreen.storyboard in Resources */,
 				F110DF0621D40FB000096BC0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15C9F9323BA9B9300F9D524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +381,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F15C9F9123BA9B9300F9D524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15C9F9823BA9B9300F9D524 /* SimpleTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F15C9F9B23BA9B9300F9D524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F110DEFA21D40FAD00096BC0 /* SimpleTimer */;
+			targetProxy = F15C9F9A23BA9B9300F9D524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F1016F0822186C760062D42A /* MainMenu.xib */ = {
@@ -529,6 +615,46 @@
 			};
 			name = Release;
 		};
+		F15C9F9C23BA9B9300F9D524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/SimpleTimerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.SimpleTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTimer.app/SimpleTimer";
+			};
+			name = Debug;
+		};
+		F15C9F9D23BA9B9300F9D524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/SimpleTimerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.SimpleTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTimer.app/SimpleTimer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -550,11 +676,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F110DF0D21D40FB000096BC0 /* Build configuration list for PBXNativeTarget "SimpleTimerExample" */ = {
+		F110DF0D21D40FB000096BC0 /* Build configuration list for PBXNativeTarget "SimpleTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F110DF0E21D40FB000096BC0 /* Debug */,
 				F110DF0F21D40FB000096BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15C9F9E23BA9B9300F9D524 /* Build configuration list for PBXNativeTarget "SimpleTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15C9F9C23BA9B9300F9D524 /* Debug */,
+				F15C9F9D23BA9B9300F9D524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
