@@ -5,17 +5,15 @@
 [![codebeat badge](https://codebeat.co/badges/86b27d85-9e33-4632-b003-09a4c50deec2)](https://codebeat.co/projects/github-com-eonist-simpletimer-master)
 [![Github actions badge](https://badgen.net/github/checks/eonist/SimpleTimer?icon=github&label=Build%20Status)](https://github.com/eonist/SimpleTimer/actions)
 
+Simple timer class in swift that enables you to
 
-## What is it:
-This is a simple timer class in swift that enables you to
-
-## How does it work:
+## Features:
 - [x] Local scoped timer
 - [x] Chainable
 - [x] One liners
 - [x] Uses regular callbacks
 
-## How to get it:
+## Installation:
 
 - SPM: `url: "github/eonist/SimpleTimer.git" .branch: "master"`
 - Manual: Copy paste: `SimplerTimer.swift`
