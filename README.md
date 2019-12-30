@@ -2,6 +2,7 @@
 
 ![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg) ![platform](https://img.shields.io/badge/Platform-macOS-blue.svg) ![Lang](https://img.shields.io/badge/Language-Swift%205.0-orange.svg)
 [![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
+[![codebeat badge](https://codebeat.co/badges/86b27d85-9e33-4632-b003-09a4c50deec2)](https://codebeat.co/projects/github-com-eonist-simpletimer-master)
 
 ## What is it:
 This is a simple timer class in swift that enables you to
