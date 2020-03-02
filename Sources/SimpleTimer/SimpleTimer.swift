@@ -9,7 +9,7 @@ open class SimpleTimer {
    private var timer: Timer?
    public var interval: TimeInterval // in seconds
    public var repeats: Bool
-   public var tick: Tick
+   public var tick: Tick // - Fixme: ⚠️️ Possibly rename to onChange etc
    public init(interval: TimeInterval, repeats: Bool = false, onTick:@escaping Tick) {
       self.interval = interval
       self.repeats = repeats
@@ -22,15 +22,27 @@ open class SimpleTimer {
 extension SimpleTimer {
    /**
     * Starts the timer
+    * - Note: start() starts the timer only if it's nil
     */
    @objc open func start() {
-      timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+      if timer == nil {
+        timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(update), userInfo: nil, repeats: repeats)
+     } else {
+        fatalError("Unable to start a timer that hasnt been invalidated and set to nil, aka stopped")
+     }
    }
    /**
     * Stops the timer
+    * - Note:  stop() stops it only if it's not nil.
+    * - Important: Special Considerations You must send this message from the thread on which the timer was installed. If you send this message from another thread, the input source associated with the timer may not be removed from its run loop, which could prevent the thread from exiting properly.
     */
    @objc open func stop() {
-      timer?.invalidate()
+      if timer != nil {
+         timer?.invalidate()
+         timer = nil
+      } else {
+        fatalError("Unable to stop a timer that hasnt been started")
+      }
    }
    /**
     * Resets the timer
