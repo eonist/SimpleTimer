@@ -6,7 +6,7 @@ import Foundation
  * SimpleTimer(interval: 3, repeats: true) { print("tick") }.start() // ticks every 3 seconds
  */
 open class SimpleTimer {
-   private var timer: Timer?
+   public var timer: Timer?
    public var interval: TimeInterval // in seconds
    public var repeats: Bool
    public var tick: Tick // - Fixme: ⚠️️ Possibly rename to onChange etc
@@ -25,7 +25,7 @@ extension SimpleTimer {
     * - Note: start() starts the timer only if it's nil
     */
    @objc open func start() {
-      Swift.print("start \(timer)")
+//      Swift.print("start \(timer)")
       if timer == nil {
         timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(update), userInfo: nil, repeats: repeats)
      } else {
@@ -38,7 +38,7 @@ extension SimpleTimer {
     * - Important: Special Considerations You must send this message from the thread on which the timer was installed. If you send this message from another thread, the input source associated with the timer may not be removed from its run loop, which could prevent the thread from exiting properly.
     */
    @objc open func stop() {
-      Swift.print("stop \(timer)")
+//      Swift.print("stop \(timer)")
       if timer != nil {
          timer?.invalidate()
          timer = nil
@@ -57,7 +57,7 @@ extension SimpleTimer {
     * This method must be in the public or scope
     */
    @objc open func update() {
-      Swift.print("update")
+//      Swift.print("update")
       tick()
    }
 }
