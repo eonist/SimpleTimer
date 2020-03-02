@@ -17,8 +17,6 @@
 		F15C9F9823BA9B9300F9D524 /* SimpleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15C9F9723BA9B9300F9D524 /* SimpleTimerTests.swift */; };
 		F1903678239123910078B85D /* SimpleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903674239123910078B85D /* SimpleTimer.swift */; };
 		F1903679239123910078B85D /* SimpleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903674239123910078B85D /* SimpleTimer.swift */; };
-		F190367A239123910078B85D /* TimeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903676239123910078B85D /* TimeAnimator.swift */; };
-		F190367B239123910078B85D /* TimeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903676239123910078B85D /* TimeAnimator.swift */; };
 		F190367C239123910078B85D /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903677239123910078B85D /* CountDownTimer.swift */; };
 		F190367D239123910078B85D /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1903677239123910078B85D /* CountDownTimer.swift */; };
 /* End PBXBuildFile section */
@@ -73,7 +71,6 @@
 		F15C9F9723BA9B9300F9D524 /* SimpleTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerTests.swift; sourceTree = "<group>"; };
 		F15C9F9923BA9B9300F9D524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1903674239123910078B85D /* SimpleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTimer.swift; sourceTree = "<group>"; };
-		F1903676239123910078B85D /* TimeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAnimator.swift; sourceTree = "<group>"; };
 		F1903677239123910078B85D /* CountDownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,7 +181,6 @@
 		F1903675239123910078B85D /* extra */ = {
 			isa = PBXGroup;
 			children = (
-				F1903676239123910078B85D /* TimeAnimator.swift */,
 				F1903677239123910078B85D /* CountDownTimer.swift */,
 			);
 			path = extra;
@@ -365,7 +361,6 @@
 				F1903679239123910078B85D /* SimpleTimer.swift in Sources */,
 				F1016F0522186C740062D42A /* AppDelegate.swift in Sources */,
 				F190367D239123910078B85D /* CountDownTimer.swift in Sources */,
-				F190367B239123910078B85D /* TimeAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +371,6 @@
 				F110DF0121D40FAD00096BC0 /* ViewController.swift in Sources */,
 				F110DEFF21D40FAD00096BC0 /* AppDelegate.swift in Sources */,
 				F1903678239123910078B85D /* SimpleTimer.swift in Sources */,
-				F190367A239123910078B85D /* TimeAnimator.swift in Sources */,
 				F190367C239123910078B85D /* CountDownTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
